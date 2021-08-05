@@ -1,0 +1,4 @@
+# Input configuration for Sway by Ricardo Steijn
+
+# Accerleration (turn off for whatever pointer available)
+input * accel_profile flat

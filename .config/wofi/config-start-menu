@@ -1,0 +1,13 @@
+# default config for the wofi launcher
+
+allow_images=true
+allow_markup=true
+show=drun
+prompt=What do you want to run?
+term=alacritty
+location=top_left
+insensitive=true
+hide_scroll=true
+lines=10
+no_actions=true
+width=600

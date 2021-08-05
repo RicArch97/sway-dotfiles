@@ -1,0 +1,16 @@
+# Theme options for Sway by Ricardo Steijn
+
+# Mouse cursor
+seat seat0 xcursor_theme XCursor-Pro-Dark 24
+
+# GTK app settings
+exec_always {
+        gsettings set $gnome-schema gtk-theme 'Orchis-grey-dark'
+        gsettings set $gnome-schema icon-theme 'Tela-circle-black-dark'
+        gsettings set $gnome-schema cursor-theme 'XCursor-Pro-Dark'
+        gsettings set $gnome-schema font-name 'Cantarell 11'
+}
+
+# Client focused/not focused colours
+client.focused $color1 $background $foreground $color1 $color1
+client.unfocused "$color24C" $background $foreground $color1 "$color24C"

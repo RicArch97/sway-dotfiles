@@ -1,0 +1,21 @@
+# Sway config by Ricardo Steijn
+
+# XWayland (runs X11 apps, SHITTY)
+xwayland force
+
+# PyWal colours
+include $HOME/.cache/wal/colors-sway
+
+# User configuration
+include $HOME/.config/sway/config.d/variables
+include $HOME/.config/sway/config.d/autostart
+include $HOME/.config/sway/config.d/output
+include $HOME/.config/sway/config.d/input
+include $HOME/.config/sway/config.d/idle
+include $HOME/.config/sway/config.d/keybinds
+include $HOME/.config/sway/config.d/windows
+include $HOME/.config/sway/config.d/theming
+include $HOME/.config/sway/config.d/statusbar
+
+# Include system-wide config
+include /etc/sway/config.d/*

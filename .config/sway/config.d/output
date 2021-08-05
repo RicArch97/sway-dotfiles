@@ -1,0 +1,30 @@
+# Output configuration for Sway by Ricardo Steijn
+
+# Found by swaymsg -t get_outputs
+# Side monitor (4K, needs scaling)
+output DP-2 {
+	scale 1.5
+	pos 0 0 mode 3840x2160@60Hz
+	max_render_time 4
+	adaptive_sync on
+}
+# Main monitor
+output DP-1 {
+	pos 2560 0 mode 3440x1440@160Hz
+	max_render_time 2
+	adaptive_sync on
+}
+
+# Workspaces per monitor
+# Main
+workspace $ws1 output DP-1
+workspace $ws2 output DP-1
+workspace $ws3 output DP-1
+workspace $ws4 output DP-1
+workspace $ws5 output DP-1
+# Side
+workspace $ws6 output DP-2
+workspace $ws7 output DP-2
+workspace $ws8 output DP-2
+workspace $ws9 output DP-2
+workspace $ws10 output DP-2

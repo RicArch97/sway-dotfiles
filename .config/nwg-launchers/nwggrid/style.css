@@ -1,0 +1,42 @@
+@import url("/home/ricardo/.cache/wal/colors-waybar.css");
+
+button, label, image {
+    background: none;
+    border-style: none;
+    box-shadow: none;
+    color: #fff;
+}
+
+button {
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+button:focus, button:hover, button:active {
+    background-color: rgba (255, 255, 255, 0.1);
+}
+
+#searchbox {
+    background: none;
+    border: 2px solid @color1;
+    border-radius: 5px;
+    color: #ccc;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#separator {
+    background-color: rgba(200, 200, 200, 0.5);
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#description {
+    margin-bottom: 50px;
+    font-size: 18px;
+}

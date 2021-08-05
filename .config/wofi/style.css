@@ -1,0 +1,27 @@
+/* import css definitions for current theme */
+@import url("/home/ricardo/.cache/wal/colors-waybar.css");
+
+#inner-box {
+  margin: 10px;
+}
+
+#input { 
+  margin: 10px;
+  border: 2px solid @color1;
+  border-radius: 5px;
+}
+
+#text {
+  margin-left: 1em;
+}
+
+#entry:selected {
+  background-color: @color2;
+  color: @foreground;
+}
+
+window {
+  border: 2px solid @color2;
+  color: @foreground;
+  border-radius: 5px;
+}

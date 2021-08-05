@@ -1,0 +1,46 @@
+# Variables for Sway by Ricardo Steijn
+
+# Mod key
+set $mod Mod4
+
+# Movement
+set $left h
+set $down j
+set $up k
+set $right l
+
+# Terminal
+set $term alacritty
+
+# App menu
+set $menu wofi
+set $start-menu wofi 				\
+--conf=$HOME/.config/wofi/config-start-menu	\
+--style=$HOME/.config/wofi/style-start-menu.css
+
+# Screen locker
+set $locker swaylock -f
+
+# Sway exit menu
+set $exit $HOME/.config/wlogout/launch.sh
+
+# GTK interface
+set $gnome-schema org.gnome.desktop.interface
+
+# Floating window size
+set $float-size width 1700 height 1000
+
+# Grimshot
+set $grimshot /usr/share/sway/scripts/grimshot
+
+# Workspaces
+set $ws1 1:Main
+set $ws2 2
+set $ws3 3
+set $ws4 4
+set $ws5 5
+set $ws6 6:Side
+set $ws7 7
+set $ws8 8
+set $ws9 9
+set $ws10 0
