@@ -2,13 +2,14 @@
 
 # General
 bindsym $mod+Return exec $term
+bindsym $mod+Shift+Return exec $term --class="termfloat"
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec $menu
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exec $exit
-bindsym $mod+Print exec $grimshot --notify save output
-bindsym $mod+Shift+Print exec $grimshot --notify save area
-bindsym $mod+Shift+p exec $grimshot --notify save screen
+bindsym $mod+Print exec grimshot --notify save output
+bindsym $mod+Shift+Print exec grimshot --notify save area
+bindsym $mod+Shift+p exec grimshot --notify save screen
 floating_modifier $mod normal
 
 # Moving focus
@@ -102,3 +103,7 @@ bindsym $mod+minus scratchpad show
 bindsym XF86AudioRaiseVolume exec pamixer -ui 2 && pamixer --get-volume > $SWAYSOCK.wob
 bindsym XF86AudioLowerVolume exec pamixer -ud 2 && pamixer --get-volume > $SWAYSOCK.wob
 bindsym XF86AudioMute exec pamixer --toggle-mute && ( pamixer --get-mute && echo 0 > $SWAYSOCK.wob ) || pamixer --get-volume > $SWAYSOCK.wob
+bindsym XF86AudioStop exec playerctl stop
+bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPlay exec playerctl play-pause

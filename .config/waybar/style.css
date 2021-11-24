@@ -10,7 +10,7 @@
 /* colors */
 @define-color background_color rgba(0, 0, 0, 0);
 @define-color text_color @foreground;
-@define-color accent_color @color4;
+@define-color accent_color @color1;
 @define-color bright_text_color #FFFFFF;
 @define-color warning_color #db7b55;
 @define-color error_color #Cd3f45;
@@ -152,8 +152,8 @@
 #workspaces button {
     border-top: 2px solid transparent;
     padding-bottom: 2px;
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 0px;
+    padding-right: 0px;
     color: @accent_color;
 }
 

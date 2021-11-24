@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Script that passes a dual monitor wallpaper to PyWal for analyze the colours
 # Then cuts the wallpaper according to resolution and saves them.

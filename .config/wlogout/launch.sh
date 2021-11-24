@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Script that launches wlogout based on the focused output
 
 # Get the focused output

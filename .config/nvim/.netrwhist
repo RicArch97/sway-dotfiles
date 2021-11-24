@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
-let g:netrw_dirhist_3='/run/media/ricardo/DATA/Programming/Stage/Crownstone/home-assistant/config/.storage'
-let g:netrw_dirhist_2='/home/ricardo/.oh-my-zsh'
-let g:netrw_dirhist_1='/home/ricardo/.config/wlogout'

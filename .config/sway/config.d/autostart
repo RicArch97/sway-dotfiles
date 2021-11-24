@@ -1,8 +1,12 @@
 # Autostart instances for Sway by Ricardo Steijn
 
+# Start PipeWire
+exec pipewire
+exec pipewire-pulse
+
 # Wayland onscreen bar (wob)
-exec mkfifo $SWAYSOCK.wob && tail -f $SWAYSOCK.wob | wob \
---background-color "#80000000"
+exec mkfifo $SWAYSOCK.wob && tail -f $SWAYSOCK.wob | wob	\
+--background-color "#00000080" 					\
 
 # Pywal load last configuration
 # Don't set terminal colors/wallpaper/reload
@@ -24,7 +28,7 @@ exec blueman-applet
 exec_always "$HOME/.config/mako/launch.sh"
 
 # Execute Gnome polkit auth agent
-exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec /usr/libexec/polkit-gnome-authentication-agent-1
 
 # Set Wallpaper
 # Can be spanned across both monitors (if set)
@@ -32,4 +36,7 @@ exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec_always "$HOME/.config/sway/scripts/set-wallpaper.sh"
 
 # Import WAYLAND_DISPLAY and XDG_CURRENT_DESKTOP into D-Bus. (for xdg-desktop-portal-wlr)
-exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec dbus-update-activation-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+
+# Set OpenRGB profile
+exec openrgb --profile main

@@ -24,4 +24,5 @@ window {
   border: 2px solid @color2;
   color: @foreground;
   border-radius: 0px;
+  background-color: rgba(0, 0, 0, 0.9);
 }

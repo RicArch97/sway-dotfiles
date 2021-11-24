@@ -31,7 +31,7 @@ set $gnome-schema org.gnome.desktop.interface
 set $float-size width 1700 height 1000
 
 # Grimshot
-set $grimshot /usr/share/sway/scripts/grimshot
+# set $grimshot /usr/share/sway/scripts/grimshot
 
 # Workspaces
 set $ws1 1:Main

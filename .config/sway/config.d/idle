@@ -1,9 +1,9 @@
 # Idle configuration for Sway by Ricardo Steijn
 
-# Lock screen after 300 seconds of inactivity
-# Turns off display after another 300 seconds
+# Lock screen after 600 seconds (10 minutes) of inactivity
+# Turns off display after 1800 seconds (30 minutes)
 # Locks screen before going to sleep
 exec swayidle -w                                                                                \
 timeout 600 '$locker'                                                                           \
-timeout 900 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"'                   \
+timeout 1800 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"'                   \
 before-sleep '$locker'

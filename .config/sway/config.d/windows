@@ -1,8 +1,8 @@
 # Window properties for Sway by Ricardo Steijn
 
 # General
-default_border pixel 3
-default_floating_border pixel 3
+default_border pixel 4
+default_floating_border pixel 4
 gaps inner 10
 smart_gaps on
 smart_borders on
@@ -12,7 +12,7 @@ smart_borders on
 for_window [app_id="firefox"] inhibit_idle fullscreen
 for_window [app_id="Google-chrome"] inhibit_idle fullscreen
 # Terminal
-for_window [app_id="Alacritty"] floating enable, resize set $float-size
+for_window [app_id="termfloat"] floating enable, resize set $float-size
 # File manager
 for_window [app_id="thunar"] floating enable
 # Pop up windows
@@ -23,10 +23,22 @@ for_window [app_id="electron"] floating enable, resize set $float-size
 # OpenRGB
 for_window [app_id="openrgb"] floating enable, resize set width 1600 height 800
 # GTK theme settings
-for_window [class="Lxappearance"] floating enable, resize set width 800 height 600
-# Teams
-for_window [class="Microsoft Teams - Preview"] inhibit_idle visible
-# Battle.net
-for_window [class="battle.net.exe"] floating enable
+for_window [app_id="lxappearance"] floating enable, resize set width 800 height 600
 # Lutris
 for_window [app_id="lutris"] floating enable
+# Blueman
+for_window [app_id="blueman-assistant"] floating enable, resize set width 800 height 600
+for_window [app_id="blueman-manager"] floating enable, resize set width 800 height 600
+# Steam & child windows
+# for_window [class="Steam"] floating enable
+# Wine
+for_window [instance="battle.net.exe"] floating enable
+
+# default floating
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="bubble"] floating enable
+for_window [window_role="task_dialog"] floating enable
+for_window [window_role="Preferences"] floating enable
+for_window [window_type="dialog"] floating enable
+for_window [window_type="menu"] floating enable
+for_window [instance="update_installer"] floating enable

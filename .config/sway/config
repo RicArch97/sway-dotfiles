@@ -1,6 +1,6 @@
 # Sway config by Ricardo Steijn
 
-# XWayland (runs X11 apps, SHITTY)
+# XWayland
 xwayland force
 
 # PyWal colours
